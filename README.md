@@ -86,7 +86,23 @@ The function for finding the best possible assignments was one of the more chall
 
 The optimum values from the Hungarian algorithm implementation were verified using an online Hungarian algorithm solver.
 
+## Technologies Used
+
+- C++
+- XML parsing
+- CSV output
+- Hungarian Algorithm
+- Chrono for runtime measurement
+
 ## References
 
 - [Hungarian Algorithm Solver](https://www.hungarianalgorithm.com)
 - [Hungarian Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Hungarian_algorithm)
+
+
+
+## Note
+
+- This page summarizes the project design and implementation.
+
+- The full source code is kept in a private repository to avoid public distribution. Access can be provided upon request for technical review.

@@ -103,4 +103,6 @@ The optimum values from the Hungarian algorithm implementation were verified usi
 
 ## Note
 
-The source code is private, but this page summarizes the project design and implementation.
+- This page summarizes the project design and implementation.
+
+- The full source code is kept in a private repository to avoid public distribution. Access can be provided upon request for technical review.
