@@ -35,9 +35,9 @@ get_validation_matrix_atleast1(string input, string output)
 
 ### Approach
 
-The Hungarian algorithm is used to find the best possible one-to-one assignment. After that, the remaining columns are assigned by minimizing the cost in each column.
+The Hungarian algorithm is used to find the best possible one-to-one assignment. If the matrices are tall matrices (row_size > col_size) or fat matrices (col_size > row_size), then they are zero padded to make them square.
 
-During implementation, it was observed that multiple one-to-one assignment solutions can have the same optimum value. Among these possible solutions, the best one is selected such that the cost of assigning the remaining columns is minimized. This helps produce an optimum one-to-many assignment while ensuring that each row has at least one assignment.
+During the research and implementation, it was observed that multiple one-to-one assignment solutions are possible with the same optimum value. For square matrices, any one of the solutions could be chosen. For fat matrices, the padded rows had to be removed and the best one had to be selected such that the cost of assigning the remaining columns is minimized. Tall matrices will not have assignments in all rows as there are not enough column candidates to pair them with. Taking all this into account, an algorithm was designed and it helped produce an optimum one-to-many assignment while ensuring that each row has at least one assignment, with the exception of tall matrcies. 
 
 ## Input and Output
 
@@ -67,7 +67,7 @@ The Hungarian algorithm finds the expected optimum value and displays the possib
 
 ### Final One-to-Many Assignment Output
 
-After selecting the best one-to-one assignment, the remaining columns are assigned to minimize the total cost.
+Among the solutions, choose the one such that the cost of assigning the remaining columns is minimized.
 
 ![Final One-to-Many Assignment Output](screenshots/one-to-many-final-output.png)
 
