@@ -211,4 +211,4 @@ The optimum values from the Hungarian algorithm implementation were verified usi
 
 - This page summarizes the project design and implementation.
 
-- The full source code is kept in a private repository to avoid public distribution. Access can be provided upon request for technical review.
+- The full source code is kept in a private repository. Access can be provided upon request for technical review.
