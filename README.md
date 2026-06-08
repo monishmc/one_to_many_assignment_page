@@ -2,6 +2,8 @@
 
 **Author:** Monish Uthappa M C
 
+This project was a stepping stone into my industry journey. It began as a technical task assigned during the hiring process for my first professional software role and laid the foundation for the work I went on to do. I am grateful to the mentors, managers, and teammates who supported and guided me throughout this journey.
+
 ## Overview
 
 This project addresses the one-to-many assignment problem using cost matrices. It supports two main cases:
