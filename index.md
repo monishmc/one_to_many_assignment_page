@@ -41,38 +41,6 @@ The Hungarian algorithm is used to find the best possible one-to-one assignment.
 
 During the research and implementation, it was observed that multiple one-to-one assignment solutions are possible with the same optimum value. For square matrices, any one of the solutions could be chosen. For fat matrices, the padded rows had to be removed and the best one had to be selected such that the cost of assigning the remaining columns is minimized. Tall matrices will not have assignments in all rows as there are not enough column candidates to pair them with. Taking all this into account, an algorithm was designed and it helped produce an optimum one-to-many assignment while ensuring that each row has at least one assignment, with the exception of tall matrcies. 
 
-## Input and Output
-
-### Input
-
-An XML file containing the cost matrix.
-
-### Output
-
-A CSV file containing the validation matrix.
-
-The output is also displayed on the console.
-
-## Sample Output
-
-### Input Cost Matrix
-
-The program reads the cost matrix from an XML file and displays it on the console.
-
-![Input Cost Matrix](screenshots/input-cost-matrix.png)
-
-### Hungarian Algorithm Output
-
-The Hungarian algorithm finds the expected optimum value and displays the possible one-to-one assignment solutions.
-
-![Hungarian Algorithm Possible Solutions](screenshots/hungarian-possible-solutions.png)
-
-### Final One-to-Many Assignment Output
-
-Among the solutions, choose the one such that the cost of assigning the remaining columns is minimized.
-
-![Final One-to-Many Assignment Output](screenshots/one-to-many-final-output.png)
-
 ## Features
 
 - Supports two-dimensional cost matrices of any dimension.
@@ -186,6 +154,38 @@ These results show that SIMD-oriented optimization has a crossover point rather 
 - `-O3 -march=native` may auto-vectorize suitable loops in the normal implementation as well.
 
 For a fair comparison, compile both implementations with the same compiler version and flags, run them on the same machine under similar system load, and use a Release build. Re-run the benchmarks after changing compiler flags, CPU, input data, or implementation details.
+
+## Input and Output
+
+### Input
+
+An XML file containing the cost matrix.
+
+### Output
+
+A CSV file containing the validation matrix.
+
+The output is also displayed on the console.
+
+## Sample Output
+
+### Input Cost Matrix
+
+The program reads the cost matrix from an XML file and displays it on the console.
+
+![Input Cost Matrix](screenshots/input-cost-matrix.png)
+
+### Hungarian Algorithm Output
+
+The Hungarian algorithm finds the expected optimum value and displays the possible one-to-one assignment solutions.
+
+![Hungarian Algorithm Possible Solutions](screenshots/hungarian-possible-solutions.png)
+
+### Final One-to-Many Assignment Output
+
+Among the solutions, choose the one such that the cost of assigning the remaining columns is minimized.
+
+![Final One-to-Many Assignment Output](screenshots/one-to-many-final-output.png)
 
 
 ## Notes
